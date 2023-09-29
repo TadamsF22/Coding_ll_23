@@ -2,8 +2,12 @@ package Coding_ll_23.String_Project;
 
 public class StringProject {
 private String myString;
+
 public StringProject (String str) {
 myString = str;
+}
+public String toString() {
+return myString;
 }
 public String reversedcase(){
     String str = myString;
@@ -70,7 +74,7 @@ public int characterCount(){
     int numb=1;
      for(int i = 0; i< myString.length(); i++) {
         char ca = myString.charAt(i);
-        if( ca !=' '&& ca !='.'){
+        if( Character.isLetter(ca)){
         numb++;  
         }    
     }   
@@ -126,9 +130,7 @@ String str = myString;
 }
 
 
-public String toString() {
-return myString;
-}
+
 
 
 
